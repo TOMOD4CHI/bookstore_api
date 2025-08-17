@@ -18,7 +18,7 @@ books = Table(
 )
 # This table is for storing refresh tokens
 # For now it won't be used because we don't have a continuous refresh token strategy
-# No disconnect to trigger the deletion of expired tokens
+# No logout  to trigger the deletion of expired tokens
 # This token works when the short-lived access token expires so the user send a silent POST /refresh to refresh the access token 
 # and potentially the refresh token
 refresh_tokens = Table(
